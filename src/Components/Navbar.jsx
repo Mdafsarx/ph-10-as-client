@@ -44,8 +44,8 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end flex items-center gap-1 md:gap-2">
-                    <button className="btn bg-white btn-sm font-bold border-0">Login</button>
-                    <button className="btn bg-white btn-sm font-bold border-0">Register</button>
+                    <NavLink className="btn bg-white btn-sm font-bold border-0" to={'/Login'}>Login</NavLink>
+                    <NavLink className="btn bg-white btn-sm font-bold border-0" to={'/Register'}>Register</NavLink>
                 </div>
             </div>
 

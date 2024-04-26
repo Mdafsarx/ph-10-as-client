@@ -4,13 +4,13 @@ import Footer from "../Components/Footer";
 
 const MainLayout = () => {
     return (
-        <>
+        <div className="overflow-x-hidden">
 
             <Navbar />
             <Outlet />
             <Footer />
 
-        </>
+        </div>
     );
 };
 

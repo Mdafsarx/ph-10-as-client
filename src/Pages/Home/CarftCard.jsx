@@ -1,9 +1,9 @@
 const Card = ({ item }) => {
     const { imgUrl , cost , name} = item || {}
     return (
-        <div>
+        <div >
             <div className="md:p-6 rounded-md shadow-md border-2 border-gray-300">
-                <img src={imgUrl} className="object-cover md:object-center w-full rounded-md h-full md:h-72 " />
+                <img src={imgUrl} className="object-cover md:object-center w-full rounded-md  h-72 " />
                 <div className="mt-6 mb-2 text-center space-y-2">
                     <p className="text-xl font-bold border-b-2 pb-1 border-black">{cost}</p>
                     <p className="text-base ">{name}</p>

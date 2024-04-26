@@ -5,6 +5,8 @@ import AddCraftSection from "../Components/AddCraftSection";
 import AddCraft from "../Pages/addCraft/AddCraft";
 import MyArtCraft from "../Pages/myArt&Craft/MyArtCraft";
 import AllArtCraft from "../Pages/allArt&Craft/AllArtCraft";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,15 @@ const router = createBrowserRouter([
       {
         path:'/myArt&Craft',
         element:<MyArtCraft/>
+      },
+
+      {
+        path:'/Login',
+        element:<Login/>
+      },
+      {
+        path:'/Register',
+        element:<Register/>
       }
 
 

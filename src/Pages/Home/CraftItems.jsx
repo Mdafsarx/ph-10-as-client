@@ -54,7 +54,7 @@ const CraftItems = () => {
                         className="mySwiper"
                     >
 
-                        {items?.map((item, i) => <SwiperSlide key={i}><Card item={item}></Card></SwiperSlide>)}
+                        {items?.slice(0,6).map((item, i) => <SwiperSlide key={i}><Card item={item}></Card></SwiperSlide>)}
                     </Swiper>
 
                 </div>

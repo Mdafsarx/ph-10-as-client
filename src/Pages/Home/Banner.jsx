@@ -17,80 +17,82 @@ const Banner = () => {
     return (
 
 
-            <div className='bg-slate-900 mb-16'>
+        <div className='bg-slate-900 mb-16'>
 
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 2500,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                   
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+            >
 
-                    <SwiperSlide>
 
-                        <div className='flex  items-center justify-between'>
+                <SwiperSlide>
 
-                            <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
-                                <h1 className='text-5xl font-bold'>Exotic tastes at <br /> your doorstep</h1>
-                                <p className='mt-3'>We supply highly quality organic products</p>
-                                <button className='btn bg-[#FF6868] border-none mt-3'>Shop Now</button>
-                            </div>
+                    <div className='flex  items-center justify-between'>
 
-                            <figure className='md:w-1/2'>
-                                <img src={img1} />
-                            </figure>
-
+                        <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
+                            <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
+                            <p className='mt-3'>We supply highly quality organic Painting</p>
+                            <button className='btn bg-[#FF6AC2] border-none mt-3'>MORE</button>
                         </div>
-                    </SwiperSlide>
-                    
-                    <SwiperSlide>
 
-                        <div className='flex  items-center justify-between'>
+                        <figure className='md:w-1/2'>
+                            <img src={img1} />
+                        </figure>
 
-                            <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
-                                <h1 className='text-5xl font-bold'>Exotic tastes at <br /> your doorstep</h1>
-                                <p className='mt-3'>We supply highly quality organic products</p>
-                                <button className='btn bg-[#FF6868] border-none mt-3'>Shop Now</button>
-                            </div>
+                    </div>
+                </SwiperSlide>
 
-                            <figure className='md:w-1/2'>
-                                <img src={img2} />
-                            </figure>
+                <SwiperSlide>
 
+                    <div className='flex  items-center justify-between'>
+
+                        <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
+                            <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
+                            <p className='mt-3'>We supply highly quality organic Painting</p>
+                            <button className='btn bg-[#FF6AC2] border-none mt-3' onClick={()=>{
+                                scrollBy(0,1300)
+                            }}>MORE</button>
                         </div>
-                    </SwiperSlide>
 
-                    <SwiperSlide>
+                        <figure className='md:w-1/2'>
+                            <img src={img2} />
+                        </figure>
 
-                        <div className='flex  items-center justify-between'>
+                    </div>
+                </SwiperSlide>
 
-                            <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
-                                <h1 className='text-5xl font-bold'>Exotic tastes at <br /> your doorstep</h1>
-                                <p className='mt-3'>We supply highly quality organic products</p>
-                                <button className='btn bg-[#FF6868] border-none mt-3'>Shop Now</button>
-                            </div>
+                <SwiperSlide>
 
-                            <figure className='md:w-1/2'>
-                                <img src={img3} />
-                            </figure>
+                    <div className='flex  items-center justify-between'>
 
+                        <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
+                            <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
+                            <p className='mt-3'>We supply highly quality organic Painting</p>
+                            <button className='btn bg-[#FF6AC2] border-none mt-3'>MORE</button>
                         </div>
-                    </SwiperSlide>
 
-                   
+                        <figure className='md:w-1/2'>
+                            <img src={img3} />
+                        </figure>
 
-                </Swiper>
+                    </div>
+                </SwiperSlide>
 
-            </div>
+
+
+            </Swiper>
+
+        </div>
 
 
     );
