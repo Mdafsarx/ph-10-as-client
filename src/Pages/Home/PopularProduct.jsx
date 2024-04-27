@@ -6,7 +6,7 @@ const PopularProduct = () => {
 
     const [items, setItems] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:3000/craftSection')
+        axios.get('http://localhost:3000/CraftItem')
             .then(data => setItems(data.data))
     }, [])
     const [show, setShow] = useState(10);

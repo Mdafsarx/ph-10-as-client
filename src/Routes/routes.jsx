@@ -7,12 +7,14 @@ import MyArtCraft from "../Pages/myArt&Craft/MyArtCraft";
 import AllArtCraft from "../Pages/allArt&Craft/AllArtCraft";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import Error from "../Pages/Error/Error";
+import PrivateRoute from "../Private/PrivateRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement:<div></div>,
+    errorElement:<Error/>,
     children:[
 
       {
@@ -25,13 +27,13 @@ const router = createBrowserRouter([
       },
       {
         path:'/addCraft',
-        element:<AddCraft/>
+        element:<PrivateRoute><AddCraft/></PrivateRoute>
       },
       {
-        path:'/myArt&Craft',
-        element:<MyArtCraft/>
+        path:'/myArt&Craft/:email',
+        element:<PrivateRoute><MyArtCraft/></PrivateRoute>,
+        loader:({params})=>fetch(`http://localhost:3000/ArtCraft/${params.email}`)
       },
-
       {
         path:'/Login',
         element:<Login/>
