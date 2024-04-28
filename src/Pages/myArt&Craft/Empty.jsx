@@ -1,6 +1,7 @@
 import img from "../../assets/sad-face-90.png"
 
 const Empty = () => {
+
     return (
         <div>
             <section className="flex items-center  ">

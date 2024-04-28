@@ -70,7 +70,7 @@ const Navbar = () => {
                                     </ul>
                                 </div>
 
-                                <button className="btn bg-white btn-sm font-bold border-0" onClick={handleLogout}>Logout</button>
+                                <button className=" text-base hover:underline  " onClick={handleLogout}>Logout</button>
                             </div> :
                             <div className="navbar-end flex items-center gap-1 md:gap-3">
                                 <NavLink className={({isActive})=>isActive?'btn btn-sm':'text-base hover:underline'} to={'/Login'}>Login</NavLink>
