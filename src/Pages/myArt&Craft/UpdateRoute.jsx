@@ -12,7 +12,7 @@ const UpdateRoute = () => {
     const { description, price, rating, customization, processing, subcategory, stock, Image, Item , _id} = Data || {}
 
    useEffect(()=>{
-    axios.get(`http://localhost:3000/ArtCraft/email/${id}`)
+    axios.get(`https://ph-10-as-server.vercel.app/ArtCraft/email/${id}`)
     .then(data=>setData(data.data))
    },[])
 
@@ -28,7 +28,7 @@ const UpdateRoute = () => {
          const Image = e.target.Image.value;
          const Item = e.target.Item.value;
          const data = {  description, price, rating, customization, processing, subcategory, stock, Image, Item }
-         axios.put(`http://localhost:3000/ArtCraft/${_id}`,data)
+         axios.put(`https://ph-10-as-server.vercel.app/ArtCraft/${_id}`,data)
          .then(data=>{
             if(data.data.modifiedCount===1){
                 toast.success('Updated successful')

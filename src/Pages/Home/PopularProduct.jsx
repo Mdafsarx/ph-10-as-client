@@ -6,7 +6,7 @@ const PopularProduct = () => {
 
     const [items, setItems] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:3000/CraftItem')
+        axios.get('https://ph-10-as-server.vercel.app/CraftItem')
             .then(data => setItems(data.data))
     }, [])
     const [show, setShow] = useState(10);

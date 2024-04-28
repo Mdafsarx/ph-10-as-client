@@ -72,9 +72,9 @@ const Register = () => {
 
     return (
         <div>
-            <div className="flex justify-center py-10">
+            <div className="flex justify-center md:py-10">
 
-                <div className="w-full max-w-md p-8 space-y-1.5 rounded-xl bg-[#FF6AC2] text-black ">
+                <div className="w-full max-w-md p-8 space-y-1.5 md:rounded-xl bg-[#40F8FF] text-black ">
                     <h1 className="text-2xl font-bold text-center">Register</h1>
                     <form onSubmit={handleRegister} className="space-y-6">
 
@@ -102,7 +102,7 @@ const Register = () => {
                         </div>
 
 
-                        <button className="block w-full p-3 text-center rounded-sm text-black font-bold bg-[#40F8FF]">Register</button>
+                        <button className="block w-full p-3 text-center rounded-sm text-white font-bold bg-[#FF6AC2]">Register</button>
                     </form>
                     <div className="flex items-center pt-4 space-x-1">
                         <div className="flex-1 h-px sm:w-16 "></div>

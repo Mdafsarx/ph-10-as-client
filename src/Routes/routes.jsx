@@ -33,13 +33,13 @@ const router = createBrowserRouter([
       {
         path:'/myArt&Craft/:email',
         element:<PrivateRoute><MyArtCraft/></PrivateRoute>,
-        // loader:({params})=>fetch(`http://localhost:3000/ArtCraft/${params.email}`)
+        // loader:({params})=>fetch(`https://ph-10-as-server.vercel.app/ArtCraft/${params.email}`)
       },
        
       {
         path:'/myArt&Craft/update/:id',
         element:<PrivateRoute><UpdateRoute/></PrivateRoute>
-        // loader:({params})=>fetch(`http://localhost:3000/ArtCraft/email/${params.id}`)
+        // loader:({params})=>fetch(`https://ph-10-as-server.vercel.app/ArtCraft/email/${params.id}`)
       },
 
       {

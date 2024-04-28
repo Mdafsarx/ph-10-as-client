@@ -20,7 +20,7 @@ const AddCraft = () => {
         const Image = e.target.Image.value;
         const Item = e.target.Item.value;
         const data = { name, email, description, price, rating, customization, processing, subcategory, stock, Image, Item }
-        axios.post('http://localhost:3000/ArtCraft', data)
+        axios.post('https://ph-10-as-server.vercel.app/ArtCraft', data)
             .then(data => {
                 if (data.data.insertedId) {
                     toast.success('Craft added successful');

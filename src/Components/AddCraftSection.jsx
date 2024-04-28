@@ -8,7 +8,7 @@ const AddCraftSection = () => {
         const cost =e.target.cost.value ;
         const name=e.target.name.value ;
         const Craft={imgUrl,cost,name};
-        axios.post('http://localhost:3000/craftSection',Craft).
+        axios.post('https://ph-10-as-server.vercel.app/craftSection',Craft).
         then(data=>{
             console.log(data.data)
             if(data.data.insertedId){

@@ -54,7 +54,7 @@ const Login = () => {
     }
 
     return (
-        <div className="flex justify-center py-10">
+        <div className="flex justify-center md:py-10">
 
 
 
@@ -69,7 +69,7 @@ const Login = () => {
                         <label htmlFor="password" className="block ">Password</label>
                         <input type="password" name="password" placeholder="Password" className="w-full text-black px-4 py-3 rounded-md dark:text-gray-800 focus:dark:border-violet-600" />
                     </div>
-                    <button className="block w-full p-3 text-center rounded-sm text-white font-bold bg-[#FF6AC2]">Login in</button>
+                    <button className="block w-full p-3 text-center rounded-sm text-white font-bold bg-[#FF6AC2]">Login</button>
                 </form>
                 <div className="flex items-center pt-4 space-x-1">
                     <div className="flex-1 h-px sm:w-16 "></div>

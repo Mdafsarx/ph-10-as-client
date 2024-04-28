@@ -13,7 +13,7 @@ const MyCraft = ({ data , Reload ,SetReload}) => {
     }
 
     const handleDelete=()=>{
-     axios.delete(`http://localhost:3000/ArtCraft/${_id}`)
+     axios.delete(`https://ph-10-as-server.vercel.app/ArtCraft/${_id}`)
      .then(data=>{
         if(data.data.deletedCount===1){
             toast.success('Delete successful')

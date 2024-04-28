@@ -11,7 +11,7 @@ const MyArtCraft = () => {
 
     useEffect(()=>{
 
-      axios.get(`http://localhost:3000/ArtCraft/${user?.email}`)
+      axios.get(`https://ph-10-as-server.vercel.app/ArtCraft/${user?.email}`)
       .then(data=>{
         setData(data.data)
       })
