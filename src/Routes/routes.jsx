@@ -9,6 +9,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import Error from "../Pages/Error/Error";
 import PrivateRoute from "../Private/PrivateRoute";
+import UpdateRoute from "../Pages/myArt&Craft/UpdateRoute";
 
 const router = createBrowserRouter([
   {
@@ -32,8 +33,15 @@ const router = createBrowserRouter([
       {
         path:'/myArt&Craft/:email',
         element:<PrivateRoute><MyArtCraft/></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:3000/ArtCraft/${params.email}`)
+        // loader:({params})=>fetch(`http://localhost:3000/ArtCraft/${params.email}`)
       },
+       
+      {
+        path:'/myArt&Craft/update/:id',
+        element:<PrivateRoute><UpdateRoute/></PrivateRoute>
+        // loader:({params})=>fetch(`http://localhost:3000/ArtCraft/email/${params.id}`)
+      },
+
       {
         path:'/Login',
         element:<Login/>

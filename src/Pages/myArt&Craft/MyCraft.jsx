@@ -1,9 +1,30 @@
+import axios from "axios";
 import { FcRating } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
-const MyCraft = ({ data }) => {
-    console.log(data);
-    const { name, price, rating, customization, stock, Image, Item } = data || {}
+const MyCraft = ({ data , Reload ,SetReload}) => {
+    const { name, price, rating, customization, stock, Image, Item , _id} = data || {};
+    const navLink=useNavigate()
+
+    function handleUpdate(){
+     navLink(`/myArt&Craft/update/${_id}`)
+    }
+
+    const handleDelete=()=>{
+     axios.delete(`http://localhost:3000/ArtCraft/${_id}`)
+     .then(data=>{
+        if(data.data.deletedCount===1){
+            toast.success('Delete successful')
+            SetReload(!Reload)
+        }
+     })
+    }
+   
+
+
+
     return (
         <div>
             <div className="card card-side bg-base-100 shadow-xl">
@@ -19,8 +40,12 @@ const MyCraft = ({ data }) => {
                         <h1><span className="font-bold">Price: </span>{price}$</h1>
                         <h1 className="flex items-center"><span className="font-bold pr-1">Rating: </span> {rating} <FcRating /></h1>
                         <div className="flex items-center gap-3 pt-1">
-                            <button className="btn btn-sm bg-black text-white border-0">Update</button>
-                            <button className="btn btn-sm bg-black text-white border-0">Delete</button>
+                            <button className="btn btn-sm bg-black text-white border-0"
+                              onClick={handleUpdate}
+                            >Update</button>
+                            <button className="btn btn-sm bg-black text-white border-0"
+                              onClick={handleDelete}
+                            >Delete</button>
                         </div>
                 </div>
             </div>

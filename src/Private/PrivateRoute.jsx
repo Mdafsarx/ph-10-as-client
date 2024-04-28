@@ -4,10 +4,12 @@ import { Navigate, useLocation } from "react-router-dom";
 
 const PrivateRoute = ({children}) => {
 
-const {user}=useContext(AuthCOntext);
+const {user , loading }=useContext(AuthCOntext);
 const location=useLocation();
-console.log(location)
 
+  if(!loading){
+   return <div className="flex justify-center items-center h-[60vh]"><span className="loading loading-bars loading-lg size-20"></span></div>
+  }   
 
   if(user){
    return children

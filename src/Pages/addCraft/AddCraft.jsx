@@ -23,7 +23,8 @@ const AddCraft = () => {
         axios.post('http://localhost:3000/ArtCraft', data)
             .then(data => {
                 if (data.data.insertedId) {
-                    toast.success('Craft added successful')
+                    toast.success('Craft added successful');
+                    e.target.reset()
                 }
             })
 
