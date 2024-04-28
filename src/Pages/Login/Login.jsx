@@ -61,9 +61,9 @@ const Login = () => {
             <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-[#40F8FF] text-black ">
                 <h1 className="text-2xl font-bold text-center">Login</h1>
                 <form className="space-y-6" onSubmit={handleLogin}>
-                    <div className="space-y-1 text-sm">
+                    <div className="space-y-1 text-sm ">
                         <label  className="block ">Email</label>
-                        <input type="email" name="email" placeholder="Email" className="w-full px-4 py-3 rounded-md text-black" />
+                        <input type="email" name="email" placeholder="Email" className="w-full input-light  px-4 py-3 rounded-md text-black" />
                     </div>
                     <div className="space-y-1 text-sm">
                         <label htmlFor="password" className="block ">Password</label>

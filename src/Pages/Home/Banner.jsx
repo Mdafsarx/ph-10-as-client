@@ -39,13 +39,13 @@ const Banner = () => {
 
                     <div className='flex  items-center justify-between'>
 
-                        <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
-                            <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
+                        <div className='*:text-white text-center w-1/2 hidden  lg:flex flex-col justify-center items-center'>
+                            <h1 className=' text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
                             <p className='mt-3'>We supply highly quality organic Painting</p>
                             <button className='btn bg-[#FF6AC2] border-none mt-3'>MORE</button>
                         </div>
 
-                        <figure className='md:w-1/2'>
+                        <figure className='lg:w-1/2'>
                             <img src={img1} />
                         </figure>
 
@@ -56,7 +56,7 @@ const Banner = () => {
 
                     <div className='flex  items-center justify-between'>
 
-                        <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
+                        <div className='*:text-white text-center w-1/2 hidden  lg:flex flex-col justify-center items-center'>
                             <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
                             <p className='mt-3'>We supply highly quality organic Painting</p>
                             <button className='btn bg-[#FF6AC2] border-none mt-3' onClick={()=>{
@@ -64,7 +64,7 @@ const Banner = () => {
                             }}>MORE</button>
                         </div>
 
-                        <figure className='md:w-1/2'>
+                        <figure className='lg:w-1/2'>
                             <img src={img2} />
                         </figure>
 
@@ -75,13 +75,13 @@ const Banner = () => {
 
                     <div className='flex  items-center justify-between'>
 
-                        <div className='*:text-white text-center w-1/2 hidden  md:flex flex-col justify-center items-center'>
+                        <div className='*:text-white text-center w-1/2 hidden  lg:flex flex-col justify-center items-center'>
                             <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
                             <p className='mt-3'>We supply highly quality organic Painting</p>
                             <button className='btn bg-[#FF6AC2] border-none mt-3'>MORE</button>
                         </div>
 
-                        <figure className='md:w-1/2'>
+                        <figure className='lg:w-1/2'>
                             <img src={img3} />
                         </figure>
 
