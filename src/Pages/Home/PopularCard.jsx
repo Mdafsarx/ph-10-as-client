@@ -14,7 +14,7 @@ const PopularCard = ({data}) => {
                         <input type="radio" name="rating-1" className="mask mask-star" />
                     </div>
                     <p className="uppercase">{data?.name}</p>
-                    <p className="font-bold text-[#FF6AC2]">{data?.cost}$</p>
+                    <p className="font-bold ">{data?.cost}$</p>
                 </div>
             </div>
         </div>

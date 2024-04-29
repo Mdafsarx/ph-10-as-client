@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { FcRating } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 
 const AllArtCraft = () => {
 
@@ -12,10 +13,9 @@ const AllArtCraft = () => {
                 setData(data.data)
             })
     }, []);
-
-    const viewDetails=(id)=>{
-        
-    
+    const navLink = useNavigate()
+    const viewDetails = (id) => {
+        navLink(`/details/${id}`)
     }
 
     return (
@@ -46,33 +46,36 @@ const AllArtCraft = () => {
                                     </td>
                                     <td>
                                         <p className="text-xl font-bold">
-                                           {Data?.name}
+                                            {Data?.name}
                                         </p>
                                     </td>
                                     <td className=" items-center">
                                         <p className="text-xl font-bold">
-                                           {Data?.Item}
+                                            {Data?.Item}
                                         </p>
                                     </td>
                                     <td>
                                         <p className="text-xl font-bold">
-                                           {Data?.price}$
+                                            {Data?.price}$
                                         </p>
                                     </td>
                                     <td>
                                         <p className="text-xl font-bold flex items-center">
-                                           {Data?.rating}<FcRating />
+                                            {Data?.rating}<FcRating />
                                         </p>
                                     </td>
                                     <td>
-                                       <button className="btn bg-[#40F8FF]" onClick={()=>viewDetails(Data?._id)}>Details</button>
+                                        <button className="btn bg-[#40F8FF]" onClick={() => {
+
+                                            viewDetails(Data?._id)
+                                        }}>Details</button>
                                     </td>
                                 </tr>)
                         }
 
 
 
-                    </tbody>     
+                    </tbody>
 
                 </table>
             </div>

@@ -13,7 +13,9 @@ const UpdateRoute = () => {
 
    useEffect(()=>{
     axios.get(`https://ph-10-as-server.vercel.app/ArtCraft/email/${id}`)
-    .then(data=>setData(data.data))
+    .then(data=>{
+        console.log(data.data)
+        setData(data.data)})
    },[])
 
    function handleUpdate(e){

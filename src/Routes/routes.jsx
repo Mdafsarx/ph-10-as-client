@@ -10,6 +10,7 @@ import Register from "../Pages/Register/Register";
 import Error from "../Pages/Error/Error";
 import PrivateRoute from "../Private/PrivateRoute";
 import UpdateRoute from "../Pages/myArt&Craft/UpdateRoute";
+import Details from "../Pages/Details";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       {
         path:'/allArt&Craft',
         element:<AllArtCraft/>
+      },
+      {
+       path:'/details/:id',
+       element:<PrivateRoute><Details/></PrivateRoute>,
+       loader:({params})=>fetch(`https://ph-10-as-server.vercel.app/ArtCraft/email/${params.id}`),
       },
       {
         path:'/addCraft',
