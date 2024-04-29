@@ -2,6 +2,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import { GiPaintBucket } from "react-icons/gi";
 import { useContext } from "react";
 import { AuthCOntext } from "../Auth/AuthProvider";
+import { Tooltip } from "react-tooltip";
+
 
 
 const Navbar = () => {
@@ -47,13 +49,17 @@ const Navbar = () => {
                 </div>
 
 
-                <div className="flex items-center animate__animated animate__pulse animate__delay-3s animate__infinite	" data-aos="zoom-in" data-aos-duration="3000"   data-aos-delay="500" >
+                <div className="flex items-center animate__animated animate__pulse animate__delay-3s animate__infinite" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500" >
                     <p className="text-2xl text-[#40F8FF]"><GiPaintBucket /></p>
                     <h2 className="md:text-xl font-bold">
                         Paint<span className="text-[#40F8FF]">S</span>tation</h2>
                 </div>
 
-
+                <a id="my-anchor-element">.</a>
+                <Tooltip
+                    anchorSelect="#my-anchor-element"
+                    content="Hello world!"
+                />
 
                 {
                     loading ?
@@ -61,17 +67,18 @@ const Navbar = () => {
 
                         user ?
                             <div className="navbar-end flex items-center gap-2">
-                                <div className="dropdown dropdown-hover">
-                                    <div className="">
+                                <div>
+                                    <a id="my-anchor-element">
                                         <div className="avatar placeholder">
                                             <div className=" rounded-full w-7 mt-1 ring ring-[#40F8FF] ring-offset-base-100 ">
                                                 <img src={user?.photoURL} alt="" />
                                             </div>
                                         </div>
-                                    </div>
-                                    <ul className="dropdown-content z-50 text-black menu p-2 shadow bg-base-100 rounded-lg w-auto">
-                                        <h2>{user?.displayName}</h2>
-                                    </ul>
+                                    </a>
+                                    <Tooltip
+                                        anchorSelect="#my-anchor-element"
+                                        content={user?.displayName}
+                                    />
                                 </div>
 
                                 <button className=" text-base hover:underline  " onClick={handleLogout}>Logout</button>

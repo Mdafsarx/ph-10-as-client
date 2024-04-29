@@ -8,6 +8,11 @@ import 'swiper/css/pagination';
 // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import axios from "axios";
+import { Typewriter } from 'react-simple-typewriter'
+
+
+
+
 
 
 const CraftItems = () => {
@@ -25,10 +30,31 @@ const CraftItems = () => {
         <div className="max-w-7xl mx-auto space-y-10">
             {/* Craft Items Section title */}
 
-            <div className="flex justify-end" data-aos="fade-left" data-aos-duration="2000">
+            <div className="flex justify-end" >
                 <div className="text-center">
-                    <h1 className="text-3xl font-bold">Crafting dreams into reality</h1>
-                    <p>Being made by human hands, the craft is made for human hands: we can not <br />only see it but caress it with our fingers</p>
+
+
+                    <div className='App'>
+                        <h1 style={{ paddingTop: '0rem', margin: 'auto 0' }} className="text-3xl font-bold">
+                            {' '}
+                            <span style={{ color: 'black', fontWeight: 'bold' }}>
+                                {/* Style will be inherited from the parent element */}
+                                <Typewriter
+                                    words={[' Crafting dreams into reality']}
+                                    loop={1}
+                                    cursor
+                                    cursorStyle=''
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1000}
+
+                                />
+                            </span>
+                        </h1>
+                    </div>
+
+
+                    <p data-aos="fade-left" data-aos-duration="2000">Being made by human hands, the craft is made for human hands: we can not <br />only see it but caress it with our fingers</p>
                 </div>
             </div>
 
@@ -53,7 +79,7 @@ const CraftItems = () => {
                         className="mySwiper"
                     >
 
-                        {items?.slice(0,6).map((item, i) => <SwiperSlide key={i}><Card item={item}></Card></SwiperSlide>)}
+                        {items?.slice(0, 6).map((item, i) => <SwiperSlide key={i}><Card item={item}></Card></SwiperSlide>)}
                     </Swiper>
 
                 </div>
