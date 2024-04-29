@@ -49,7 +49,7 @@ const MyArtCraft = () => {
                 
                 Data?.length === 0 ?
                 
-                <Empty data={Data}/> :
+                <Empty text={'You have not added anything to the my Art&Craft'}/> :
 
                         <div className="bg-gray-800 px-4">
                             <div className="max-w-7xl mx-auto py-20 space-y-7">

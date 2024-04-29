@@ -17,13 +17,11 @@ const Navbar = () => {
         <NavLink className={({ isActive }) => isActive ? 'btn btn-sm bg-black lg:bg-white text-white lg:text-black' : ''} to={`/myArt&Craft/${user?.email}`}>My Art&Craft</NavLink>
     </>
 
+    const location = useLocation()
     function handleLogout() {
         Logout()
     }
-
-    const location = useLocation()
-    console.log(location)
-
+    
 
 
 
@@ -55,7 +53,7 @@ const Navbar = () => {
                         Paint<span className="text-[#40F8FF]">S</span>tation</h2>
                 </div>
 
-                
+
                 {
                     loading ?
 
@@ -88,8 +86,8 @@ const Navbar = () => {
 
                 {
                     location.pathname === '/' ?
-                        <label className="swap swap-rotate border-l border-dashed border-white  ml-1.5 pl-1  " >
-
+                       
+                         <label className="swap swap-rotate border-l border-dashed border-white  ml-1.5 pl-1  ">
                             {/* this hidden checkbox controls the state */}
                             <input type="checkbox" className="theme-controller" value={'dark'} />
                             {/* sun icon */}
