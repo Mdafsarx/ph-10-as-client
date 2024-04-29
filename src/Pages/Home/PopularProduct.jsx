@@ -9,7 +9,7 @@ const PopularProduct = () => {
         axios.get('https://ph-10-as-server.vercel.app/CraftItem')
             .then(data => setItems(data.data))
     }, [])
-    const [show, setShow] = useState(10);
+    const [show, setShow] = useState(4);
     const [view, setView] = useState(true)
 
 
@@ -25,7 +25,7 @@ const PopularProduct = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
 
                 {
-                    items?.slice(6, show).map(item => <PopularCard key={item._id} data={item} />)
+                    items?.slice(0, show).map(item => <PopularCard key={item._id} data={item} />)
                 }
 
             </div>

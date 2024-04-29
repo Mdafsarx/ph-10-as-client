@@ -48,7 +48,7 @@ const AddCraft = () => {
 
                             <div className="col-span-full sm:col-span-3">
                                 <label className="text-sm uppercase">email</label>
-                                <input type="email" name="email" placeholder="Email" value={user?.email} className="w-full rounded-md text-black   pl-1" required />
+                                <input type="email" name="email" placeholder="Email" value={user?.email} className="w-full rounded-md text-black   pl-1"  />
                             </div>
 
                             <div className="col-span-full sm:col-span-2">

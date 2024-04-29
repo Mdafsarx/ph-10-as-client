@@ -12,7 +12,7 @@ const AllArtCraft = () => {
     useEffect(() => {
         axios.get('https://ph-10-as-server.vercel.app/ArtCraft')
             .then(data => {
-                setData(data.data)
+                setData(data.data.slice(6,data.data.length))
                 setLoading(false)
             })
     }, []);
@@ -20,6 +20,7 @@ const AllArtCraft = () => {
     const viewDetails = (id) => {
         navLink(`/details/${id}`)
     }
+    console.log(allData)
 
     return (
         <div className="max-w-7xl mx-auto md:py-20">

@@ -20,7 +20,7 @@ const CraftItems = () => {
 
     const [items, setItems] = useState([])
     useEffect(() => {
-        axios.get('https://ph-10-as-server.vercel.app/CraftItem')
+        axios.get('https://ph-10-as-server.vercel.app/ArtCraft')
             .then(data => setItems(data.data))
     }, [])
 
