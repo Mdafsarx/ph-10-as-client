@@ -32,9 +32,9 @@ const AddCraft = () => {
     
 
     return (
-        <div>
+        <div >
             <section className="p-20 bg-gray-800 text-gray-50">
-                <form onSubmit={addCraft} className="container flex flex-col mx-auto space-y-12">
+                <form onSubmit={addCraft} className="container flex flex-col mx-auto space-y-12"  data-aos="zoom-in"  data-aos-duration="3000"   data-aos-delay="500">
                     <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-900">
                         <div className="space-y-2 col-span-full lg:col-span-1">
                             <img src={img} alt="" />

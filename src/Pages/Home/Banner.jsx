@@ -17,13 +17,13 @@ const Banner = () => {
     return (
 
 
-        <div className='bg-slate-900 mb-16'>
+        <div className='bg-black mb-16'  >
 
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -39,13 +39,13 @@ const Banner = () => {
 
                     <div className='flex  items-center justify-between'>
 
-                        <div className='*:text-white text-center w-1/2 hidden  lg:flex flex-col justify-center items-center'>
+                        <div className='*:text-white text-center w-1/2 hidden  lg:flex flex-col justify-center items-center'  data-aos="fade-right" data-aos-duration="2000">
                             <h1 className=' text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
                             <p className='mt-3'>We supply highly quality organic Painting</p>
                             <button className='btn bg-[#FF6AC2] border-none mt-3'>MORE</button>
                         </div>
 
-                        <figure className='lg:w-1/2'>
+                        <figure className='lg:w-1/2'  data-aos="fade-left"  data-aos-duration="2000">
                             <img src={img1} />
                         </figure>
 

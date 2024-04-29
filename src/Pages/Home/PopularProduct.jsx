@@ -15,7 +15,8 @@ const PopularProduct = () => {
 
 
     return (
-        <div className="my-20 space-y-10 max-w-7xl mx-auto">
+        <div className="my-20 space-y-10 max-w-7xl mx-auto" data-aos="zoom-in" data-aos-duration="3000"   data-aos-delay="1000" data-aos-offset="300"
+        data-aos-easing="ease-in-sine">
             <div className="text-center">
                 <h4>Visit Our Store</h4>
                 <h4 className="text-4xl font-bold uppercase">POPULAR Drawing</h4>

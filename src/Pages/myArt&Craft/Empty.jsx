@@ -4,7 +4,7 @@ import img from "../../assets/sad-face-90.png"
 const Empty = () => {
 
     return (
-        <div>
+        <div  data-aos="zoom-in"  data-aos-duration="3000"   >
             <section className="flex items-center  ">
 
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-10 space-y-8 text-center sm:max-w-md">

@@ -47,7 +47,7 @@ const Navbar = () => {
                 </div>
 
 
-                <div className="flex items-center">
+                <div className="flex items-center animate__animated animate__pulse animate__delay-3s animate__infinite	" data-aos="zoom-in" data-aos-duration="3000"   data-aos-delay="500" >
                     <p className="text-2xl text-[#40F8FF]"><GiPaintBucket /></p>
                     <h2 className="md:text-xl font-bold">
                         Paint<span className="text-[#40F8FF]">S</span>tation</h2>

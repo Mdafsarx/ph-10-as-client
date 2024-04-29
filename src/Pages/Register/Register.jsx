@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthCOntext } from "../../Auth/AuthProvider";
 import { updateProfile } from "firebase/auth";
-import auth from "../../Auth/Firebase";
+import auth from "../../../firebase.config";
 import { toast } from "react-toastify";
 
 const Register = () => {
@@ -71,7 +71,7 @@ const Register = () => {
 
 
     return (
-        <div>
+        <div  data-aos="zoom-in" data-aos-duration="3000"   data-aos-delay="500">
             <div className="flex justify-center md:py-10">
 
                 <div className="w-full max-w-md p-8 space-y-1.5 md:rounded-xl bg-[#40F8FF] text-black ">

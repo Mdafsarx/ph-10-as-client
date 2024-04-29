@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "axios": "^1.6.8",
     "firebase": "^10.11.1",
     "react": "^18.2.0",

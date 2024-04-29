@@ -25,14 +25,14 @@ const CraftItems = () => {
         <div className="max-w-7xl mx-auto space-y-10">
             {/* Craft Items Section title */}
 
-            <div className="flex justify-end">
+            <div className="flex justify-end" data-aos="fade-left" data-aos-duration="2000">
                 <div className="text-center">
                     <h1 className="text-3xl font-bold">Crafting dreams into reality</h1>
                     <p>Being made by human hands, the craft is made for human hands: we can not <br />only see it but caress it with our fingers</p>
                 </div>
             </div>
 
-            <div className="flex justify-start">
+            <div className="flex justify-start" data-aos="fade-right" data-aos-duration="2000">
                 <div className="mb-20 flex max-w-4xl">
 
                     <Swiper

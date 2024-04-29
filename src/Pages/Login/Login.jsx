@@ -54,7 +54,7 @@ const Login = () => {
     }
 
     return (
-        <div className="flex justify-center md:py-10">
+        <div className="flex justify-center md:py-10"  data-aos="zoom-in" data-aos-duration="3000"   data-aos-delay="500">
 
 
 

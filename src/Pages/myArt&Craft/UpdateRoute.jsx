@@ -39,10 +39,10 @@ const UpdateRoute = () => {
     
 
     return (
-        <div>
+        <div   >
             <div>
                 <section className="p-20 bg-gray-800 text-gray-50">
-                    <form className="container flex flex-col mx-auto space-y-12" onSubmit={handleUpdate}>
+                    <form className="container flex flex-col mx-auto space-y-12" onSubmit={handleUpdate} data-aos="zoom-in"  data-aos-duration="3000" >
                         <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-2xl shadow-sm bg-gray-900 ">
 
                             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">

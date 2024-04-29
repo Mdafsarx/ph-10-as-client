@@ -26,7 +26,7 @@ const MyCraft = ({ data , Reload ,SetReload}) => {
 
 
     return (
-        <div>
+        <div  data-aos="zoom-in"  data-aos-duration="3000"   data-aos-delay="1500">
             <div className="card card-side bg-base-100 shadow-xl">
                 <figure>
                     <img src={Image} className="px-4 md:px-0 rounded-3xl md:rounded-none h-44 md:h-56 w-56" />
