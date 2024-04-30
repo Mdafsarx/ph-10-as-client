@@ -23,7 +23,7 @@ const AllArtCraft = () => {
     console.log(allData)
 
     return (
-        <div className="max-w-7xl mx-auto md:py-20">
+        <div className="max-w-7xl mx-auto py-10 md:py-20">
 
             {
                 loading ?
@@ -50,32 +50,32 @@ const AllArtCraft = () => {
                                                 <td className="hidden md:flex">
                                                     <div className="flex items-center gap-7">
                                                         <div className="w-full">
-                                                            <img src={Data?.Image} className="w-full h-60  rounded-2xl" />
+                                                            <img src={Data?.Image} className="w-96 h-60  rounded-2xl" />
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p className="text-xl font-bold">
+                                                    <p className="md:text-xl font-bold">
                                                         {Data?.name}
                                                     </p>
                                                 </td>
                                                 <td className=" items-center">
-                                                    <p className="text-xl font-bold">
+                                                    <p className="md:text-xl font-bold">
                                                         {Data?.Item}
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <p className="text-xl font-bold">
+                                                    <p className="md:text-xl font-bold">
                                                         {Data?.price}$
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <p className="text-xl font-bold flex items-center">
+                                                    <p className="md:text-xl font-bold flex items-center">
                                                         {Data?.rating}<FcRating />
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <button className="btn bg-[#40F8FF]" onClick={() => {
+                                                    <button className="btn btn-sm bg-[#40F8FF]" onClick={() => {
 
                                                         viewDetails(Data?._id)
                                                     }}>Details</button>

@@ -6,12 +6,12 @@ const Details = () => {
     const { name, email, description, price, rating, customization, processing, subcategory, stock, Image, Item } = loadedData || {};
 
     return (
-        <div className="py-20 max-w-7xl mx-auto">
-            <div className="card card-side bg-base-100 shadow-xl rounded-2xl">
-  <figure className="w-1/4">
-    <img src={Image} alt="Movie" className="h-96 w-full"/>
+        <div className="md:py-20 max-w-7xl mx-auto">
+            <div className="card md:card-side bg-base-100 shadow-xl rounded-none md:rounded-2xl">
+  <figure className="md:w-1/2">
+    <img src={Image} alt="Movie" className="h-full w-full"/>
     </figure>
-  <div className="card-body">
+  <div className="p-1 md:card-body">
     <h2 className="text-2xl font-extrabold">{Item}</h2>
     <h2 className="text-xl"><span className=" font-bold pr-2">Email:</span>{email}</h2>
     <h2 className="text-xl"><span className=" font-bold pr-2">User Name:</span>{name}</h2>
@@ -28,8 +28,8 @@ const Details = () => {
     </div>
 
     <div className="flex items-center gap-4">
-    <h2 className="text-xl "><span className=" font-bold pr-2">customization:</span>{customization}</h2>
-    <h2 className="text-xl "><span className=" font-bold pr-2">Processing:</span>{processing}</h2>
+    <h2 className="text-xl "><span className=" font-bold pr-2">customization:</span>{customization==='true'?'true':'false'}</h2>
+    <h2 className="text-xl "><span className=" font-bold pr-2">Processing:</span>{processing} Hour</h2>
     </div>
      
      <p>

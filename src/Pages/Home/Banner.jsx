@@ -60,7 +60,7 @@ const Banner = () => {
                             <h1 className='text-5xl font-bold'>Art is created with the heart <br /> and built with the mind.</h1>
                             <p className='mt-3'>We supply highly quality organic Painting</p>
                             <button className='btn bg-[#FF6AC2] border-none mt-3' onClick={()=>{
-                                scrollBy(0,1300)
+                                scrollBy(0,500)
                             }}>MORE</button>
                         </div>
 
