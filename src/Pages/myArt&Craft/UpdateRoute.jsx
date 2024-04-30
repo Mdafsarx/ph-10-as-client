@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import img from "../../assets/undraw_Add_files_re_v09g.png"
 import axios from "axios";
@@ -30,7 +31,8 @@ const UpdateRoute = () => {
          const Image = e.target.Image.value;
          const Item = e.target.Item.value;
          const data = {  description, price, rating, customization, processing, subcategory, stock, Image, Item }
-         axios.put(`https://ph-10-as-server.vercel.app/ArtCraft/${_id}`,data)
+         axios.put(`https://ph-10-as-server.vercel.app/art/${_id}`,data)
+        //  axios.put(`http://localhost:3000/art/${_id}`,data)
          .then(data=>{
             if(data.data.modifiedCount===1){
                 toast.success('Updated successful')
@@ -41,15 +43,13 @@ const UpdateRoute = () => {
     
 
     return (
-        <div   >
+        <div >
             <div>
-                <section className="p-20 bg-gray-800 text-gray-50">
+                <section className="md:p-20 bg-gray-800 text-gray-50">
                     <form className="container flex flex-col mx-auto space-y-12" onSubmit={handleUpdate} data-aos="zoom-in"  data-aos-duration="3000" >
-                        <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-2xl shadow-sm bg-gray-900 ">
+                        <fieldset className="grid grid-cols-4 gap-6 p-6 md:rounded-2xl shadow-sm bg-gray-900 ">
 
                             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
-
-
 
                                 <div className="col-span-full sm:col-span-2">
                                     <label htmlFor="email" className="text-sm uppercase">short description</label>
@@ -103,7 +103,7 @@ const UpdateRoute = () => {
                                     </button>
                                 </div>
                             </div>
-                            <div className="space-y-2 col-span-full lg:col-span-1">
+                            <div className="space-y-2 col-span-full hidden md:flex lg:col-span-1">
                                 <img src={img} alt="" />
                             </div>
 

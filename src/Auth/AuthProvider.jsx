@@ -6,7 +6,7 @@ export const AuthCOntext = createContext(null)
 const AuthProvider = ({ children }) => {
 
     const [user,setUser]=useState(null);
-    const [loading,setLoading]=useState(false)
+    const [loading,setLoading]=useState(false);
 
     //   Register
     const register = (email, password) => {
@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
 
 
     return (
-        <AuthCOntext.Provider value={{ register, login, google, github , user , Logout ,loading ,setLoading}}>
+        <AuthCOntext.Provider value={{ register, login, google, github , user , Logout ,loading ,setLoading }}>
             {children}
         </AuthCOntext.Provider>
     );

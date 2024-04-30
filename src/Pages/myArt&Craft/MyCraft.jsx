@@ -2,6 +2,8 @@ import axios from "axios";
 import { FcRating } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import Swal from 'sweetalert2'
+
 
 
 const MyCraft = ({ data , Reload ,SetReload}) => {
@@ -13,13 +15,37 @@ const MyCraft = ({ data , Reload ,SetReload}) => {
     }
 
     const handleDelete=()=>{
-     axios.delete(`https://ph-10-as-server.vercel.app/ArtCraft/${_id}`)
-     .then(data=>{
-        if(data.data.deletedCount===1){
-            toast.success('Delete successful')
-            SetReload(!Reload)
-        }
-     })
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+                axios.delete(`https://ph-10-as-server.vercel.app/ArtCraft/${_id}`)
+                .then(data=>{
+                   if(data.data.deletedCount===1){
+                    axios.delete(`https://ph-10-as-server.vercel.app/ArtCraft/${_id}`)
+                    .then(data=>{
+                       if(data.data.deletedCount===1){
+                           toast.success('Delete successful')
+                           SetReload(!Reload)
+                       }
+                    })
+                       SetReload(!Reload)
+                   }
+                })
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+              });
+            }
+          });
+     
     }
    
 

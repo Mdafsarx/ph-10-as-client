@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { AuthCOntext } from "../../Auth/AuthProvider";
 
 const AddCraft = () => {
-     const {user}=useContext(AuthCOntext);
+    const { user } = useContext(AuthCOntext);
     function addCraft(e) {
         e.preventDefault();
         const name = e.target.name.value;
@@ -29,26 +29,26 @@ const AddCraft = () => {
             })
 
     }
-    
+
 
     return (
         <div >
             <section className="p-20 bg-gray-800 text-gray-50">
-                <form onSubmit={addCraft} className="container flex flex-col mx-auto space-y-12"  data-aos="zoom-in"  data-aos-duration="3000"   data-aos-delay="500">
+                <form onSubmit={addCraft} className="container flex flex-col mx-auto space-y-12" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">
                     <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-900">
                         <div className="space-y-2 col-span-full lg:col-span-1">
                             <img src={img} alt="" />
                         </div>
-                        <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
+                        <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3 ">
 
-                            <div className="col-span-full sm:col-span-3">
+                            <div className="col-span-full sm:col-span-3 ">
                                 <label className="text-sm uppercase">name</label>
-                                <input id="name" type="text" placeholder="Name" value={user?.displayName} className="w-full rounded-md text-black pl-1 " required />
+                                <input id="name" type="text" placeholder="Name" value={user?.displayName} className="w-full rounded-md text-black  pl-1" required />
                             </div>
 
                             <div className="col-span-full sm:col-span-3">
                                 <label className="text-sm uppercase">email</label>
-                                <input type="email" name="email" placeholder="Email" value={user?.email} className="w-full rounded-md text-black   pl-1" required  />
+                                <input type="email" name="email" placeholder="Email" value={user?.email} className="w-full rounded-md text-black   pl-1" required />
                             </div>
 
                             <div className="col-span-full sm:col-span-2">
@@ -63,7 +63,7 @@ const AddCraft = () => {
 
                             <div className="col-span-full sm:col-span-2 uppercase">
                                 <label htmlFor="city" className="text-sm">rating</label>
-                                <input id="rating" type="text" placeholder="Rating" className="w-full rounded-md  text-black pl-1" required />
+                                <input id="rating" type="number" min={'1'} max={'5'} placeholder="Rating" className="w-full rounded-md  text-black pl-1" required />
                             </div>
 
                             <div className="col-span-full sm:col-span-2">
@@ -78,7 +78,7 @@ const AddCraft = () => {
                             </div>
 
                             <div className="col-span-full sm:col-span-2">
-                                <label className="text-sm uppercase">subcategory_Name</label>
+                                <label className="text-sm uppercase">subcategory Name</label>
                                 <input id="subcategory" type="text" placeholder="Subcategory" className="w-full rounded-md text-black pl-1 " required />
                             </div>
 

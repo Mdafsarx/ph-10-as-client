@@ -1,6 +1,6 @@
 # PaintStation
 
-Live Site: [PaintStation](insert_live_site_url_here)
+Live Site: [PaintStation](https://iridescent-stardust-70d638.netlify.app)
 
 ## About PaintStation
 

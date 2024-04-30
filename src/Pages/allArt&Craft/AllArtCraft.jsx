@@ -1,11 +1,10 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { FcRating } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import Empty from "../myArt&Craft/Empty";
 
 const AllArtCraft = () => {
-
 
     const [allData, setData] = useState([])
     const [loading, setLoading] = useState(true)
