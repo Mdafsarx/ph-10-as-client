@@ -12,7 +12,6 @@ server: [here](https://github.com/Mdafsarx/ph-10-as-server)
 
 ## Features
 
-- **Extensive Product Catalog**: Browse through a wide range of art supplies, including paints, brushes, canvases, and more, curated to inspire your creativity.
 - **Community Gallery**: Showcase your artwork and crafts in our community gallery, where you can share your creations with fellow artists and receive feedback and support.
 - **Customization Options**: Personalize your shopping experience with customizable product options, allowing you to tailor your purchases to your specific needs and preferences.
 - **Popular Drawing**: Explore our curated collection of popular drawing supplies, featuring top-rated products and customer favorites to help you kickstart your next masterpiece.
