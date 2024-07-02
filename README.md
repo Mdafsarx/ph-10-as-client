@@ -22,6 +22,39 @@ Whether you're a seasoned artist or just starting your creative journey, PaintSt
 
 
 ## NPM Packages Used
+- @tanstack/react-query
+- react-router-dom
+- react-simple-typewriter
+- react-spinners
+- stripe
+- swiper
 
-- **React-simple-typewrite**: Add engaging typewriter effects to your website, enhancing user experience and engagement.
-- **React-tooltip**: Easily add tooltips to elements on your website, providing additional information or context for users.
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm (or yarn) installed on your development machine.
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-project.git
+   
+   Navigate into the project directory: cd your-project
+
+   Install dependencies:
+   
+   npm install
+   or
+   yarn install
+
+   To run the project locally, use the following command:
+   npm start
+   or
+   yarn start
+
+#  Additional Notes:
+Replace your-username and your-project with your actual GitHub username and project repository name.
