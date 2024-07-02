@@ -20,11 +20,11 @@ server: [here](https://github.com/Mdafsarx/ph-10-as-server)
 
 
 ## NPM Packages Used
-- @tanstack/react-query
+- react-fast-marquee
 - react-router-dom
 - react-simple-typewriter
 - react-spinners
-- stripe
+- react-awesome-button
 - swiper
 
 ## Getting Started
