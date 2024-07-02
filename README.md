@@ -3,7 +3,7 @@
 Welcome to PaintStation, your go-to destination for all things art and craft. Our website is dedicated to providing a vibrant platform for artists and craft enthusiasts to explore, create, and connect.
 
 
-# About PaintStation 
+## About PaintStation 
 
 Live Site: [PaintStation](https://iridescent-stardust-70d638.netlify.app)
 
@@ -55,5 +55,5 @@ Make sure you have Node.js and npm (or yarn) installed on your development machi
    or
    yarn start
 
-#  Additional Notes:
+##  Additional Notes:
 Replace your-username and your-project with your actual GitHub username and project repository name.
