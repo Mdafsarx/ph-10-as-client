@@ -12,9 +12,14 @@ server: [here](https://github.com/Mdafsarx/ph-10-as-server)
 
 ## Features
 
-- **Community Gallery**: Showcase your artwork and crafts in our community gallery, where you can share your creations with fellow artists and receive feedback and support.
-- **Customization Options**: Personalize your shopping experience with customizable product options, allowing you to tailor your purchases to your specific needs and preferences.
-- **Popular Drawing**: Explore our curated collection of popular drawing supplies, featuring top-rated products and customer favorites to help you kickstart your next masterpiece.
+### 1. Add Craft
+The "Add Craft" section allows users to upload and share their own paintings. Users can submit their artworks, which will be displayed on the website for others to view and appreciate.
+
+### 2. My Art&Craft
+In the "My Art&Craft" section, users can manage their uploaded paintings. This feature provides a personalized space where users can edit or remove their artworks as desired.
+
+### 3. All Art & Craft
+The "All Art & Craft" section showcases a gallery of all paintings contributed by users. Visitors can browse through a collection of artworks, view details about each piece, and discover a variety of creative expressions.
 
 
 
