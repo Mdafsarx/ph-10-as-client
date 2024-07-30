@@ -10,14 +10,14 @@ const ContractUs = () => {
         <div className="max-w-7xl mx-auto space-y-7 my-20">
 
             <div className="text-center">
-                <h3 className="text-xl">Find Answers To All Your Questions</h3>
-                <h1 className="text-4xl font-bold">GOT A PROBLEM?</h1>
+                <h3 className="text-xl" data-aos="fade-right"  data-aos-duration="3000"   data-aos-delay="1000" >Find Answers To All Your Questions</h3>
+                <h1 className="text-4xl font-bold"  data-aos="fade-left"  data-aos-duration="3000"   data-aos-delay="1000" >GOT A PROBLEM?</h1>
             </div>
 
             <div className="flex flex-col md:flex-row items-center gap-10 justify-center">
 
                 {/* doc */}
-                <div className="flex gap-3">
+                <div className="flex gap-3"  data-aos="zoom-out-up"  data-aos-duration="3000"   data-aos-delay="2000" >
                     <figure>
                         <FcDocument className="text-6xl"/>
                     </figure>
@@ -31,7 +31,7 @@ const ContractUs = () => {
 
 
                 {/* support */}
-                <div className="flex gap-3">
+                <div className="flex gap-3" data-aos="zoom-out-up"  data-aos-duration="3000"   data-aos-delay="2000">
                     <figure>
                         <MdOutlineSupportAgent className="text-6xl"/>
                     </figure>
@@ -45,7 +45,7 @@ const ContractUs = () => {
 
 
                 {/* video */}
-                <div className="flex gap-3">
+                <div className="flex gap-3" data-aos="zoom-out-up"  data-aos-duration="3000"   data-aos-delay="2000">
                     <figure>
                         <FcVideoCall className="text-6xl"/>
                     </figure>

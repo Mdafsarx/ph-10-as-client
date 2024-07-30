@@ -1,9 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const Error = () => {
     return (
         <div>
+             <Helmet>
+               <title>PaintStation | Error</title>
+            </Helmet>
             <section className="flex items-center h-full p-16 bg-gray-900 min-h-screen">
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
                     <div className="max-w-md text-center">

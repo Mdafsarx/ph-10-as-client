@@ -22,7 +22,7 @@ const PopularProduct = () => {
                 <h4 className="text-4xl font-bold uppercase">POPULAR Drawing</h4>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mx-8 md:mx-0">
 
                 {
                     items?.slice(0, show).map(item => <PopularCard key={item._id} data={item} />)

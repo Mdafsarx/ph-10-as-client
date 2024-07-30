@@ -1,18 +1,22 @@
 import Empty from "./Empty";
 import MyCraft from "./MyCraft";
 import { useContext, useEffect, useState } from "react";
-import axios from "axios";
 import { AuthCOntext } from "../../Auth/AuthProvider";
+import useAxios from "../../hooks/useAxios";
+import { Helmet } from "react-helmet-async";
+// import axios from "axios";
 
 const MyArtCraft = () => {
     const { user } = useContext(AuthCOntext)
     const [Data, setData] = useState([]);
     const [Reload, SetReload] = useState(false);
     const [loading,setLoading]=useState(true)
+    const axiosSecure=useAxios()
 
     useEffect(() => {
 
-        axios.get(`https://ph-10-as-server.vercel.app/ArtCraft/${user?.email}`)
+        // axios.get(`https://ph-10-as-server.vercel.app/ArtCraft/${user?.email}`,{withCredentials:true})
+            axiosSecure.get(`/ArtCraft/${user?.email}`)
             .then(data => {
                 setData(data.data);
                     setLoading(false)
@@ -42,6 +46,9 @@ const MyArtCraft = () => {
 
     return (
         <div className="">
+             <Helmet>
+               <title>PaintStation | My Art-Craft</title>
+            </Helmet>
 
 
             {

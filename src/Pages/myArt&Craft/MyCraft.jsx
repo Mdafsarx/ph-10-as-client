@@ -7,7 +7,8 @@ import Swal from 'sweetalert2'
 
 
 const MyCraft = ({ data , Reload ,SetReload}) => {
-    const { name, price, rating, customization, stock, Image, Item , _id} = data || {};
+    const { name, price, rating, customization, stock, image, Item , _id} = data || {};
+    console.log(image)
     const navLink=useNavigate()
 
     function handleUpdate(){
@@ -55,7 +56,7 @@ const MyCraft = ({ data , Reload ,SetReload}) => {
         <div  data-aos="zoom-in"  data-aos-duration="3000"   data-aos-delay="1500">
             <div className="card card-side bg-base-100 shadow-xl">
                 <figure>
-                    <img src={Image} className="px-4 md:px-0 rounded-3xl md:rounded-none h-44 md:h-56 w-56" />
+                    <img src={image} className="px-4 md:px-0 rounded-3xl md:rounded-none h-44 md:h-56 w-56" />
                 </figure>
                 <div className="divider lg:divider-horizontal py-4"></div>
                 <div className="p-3 md:p-1 pt-3 space-y-0.5">

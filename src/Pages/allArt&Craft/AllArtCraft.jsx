@@ -1,34 +1,37 @@
 import axios from "axios";
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FcRating } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import Empty from "../myArt&Craft/Empty";
+import { Helmet } from "react-helmet-async";
 
 const AllArtCraft = () => {
 
     const [allData, setData] = useState([])
     const [loading, setLoading] = useState(true)
+    console.log(allData)
     useEffect(() => {
         axios.get('https://ph-10-as-server.vercel.app/ArtCraft')
             .then(data => {
-                setData(data.data.slice(6,data.data.length))
-                setLoading(false)
-            })
-    }, []);
+                setData(data.data.slice(6, data.data.length))
+                setLoading(false)})} , [])
+    
     const navLink = useNavigate()
     const viewDetails = (id) => {
         navLink(`/details/${id}`)
     }
-    console.log(allData)
 
     return (
         <div className="max-w-7xl mx-auto py-10 md:py-20">
+             <Helmet>
+               <title>PaintStation | All Art-Craft</title>
+            </Helmet>
 
             {
                 loading ?
                     <div className="flex justify-center items-center h-[60vh]"><span className="loading loading-bars loading-lg size-20"></span></div>
                     : allData.length === 0 ?
-                        <Empty text={'No one has added anything here'}/> :
+                        <Empty text={'No one has added anything here'} /> :
                         <div>
                             <table className="table border-2 border-black">
                                 {/* head */}
@@ -49,7 +52,7 @@ const AllArtCraft = () => {
                                                 <td className="hidden md:flex">
                                                     <div className="flex items-center gap-7">
                                                         <div className="w-full">
-                                                            <img src={Data?.Image} className="w-96 h-60  rounded-2xl" />
+                                                            <img src={Data?.image} className="w-96 h-60  rounded-2xl" />
                                                         </div>
                                                     </div>
                                                 </td>
