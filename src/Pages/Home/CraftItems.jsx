@@ -30,7 +30,7 @@ const CraftItems = () => {
         <div className="max-w-7xl mx-auto space-y-10">
             {/* Craft Items Section title */}
 
-            <div className="flex justify-end" >
+            <div className="flex justify-center" >
                 <div className="text-center">
 
 
@@ -58,7 +58,7 @@ const CraftItems = () => {
                 </div>
             </div>
 
-            <div className="flex justify-start" data-aos="fade-right" data-aos-duration="2000">
+            <div className="flex justify-center" data-aos="fade-right" data-aos-duration="2000">
                 <div className="mb-20 flex max-w-4xl">
 
                     <Swiper

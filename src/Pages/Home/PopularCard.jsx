@@ -1,9 +1,9 @@
 const PopularCard = ({data}) => {
     return (
         <div className="">
-            <div className=" bg-base-100 shadow-xl group border">
+            <div className=" bg-base-100 shadow-xl group border rounded-2xl">
                 <figure className="">
-                    <img src={data?.imgUrl} alt="Shoes" className="w-full h-52 group-hover:scale-90 group-hover:rounded-xl"/>
+                    <img src={data?.imgUrl} alt="Shoes" className="w-full h-52 group-hover:scale-90 group-hover:rounded-2xl rounded-t-2xl"/>
                 </figure>
                 <div className="card-body items-center text-center">
                     <div className="rating">
