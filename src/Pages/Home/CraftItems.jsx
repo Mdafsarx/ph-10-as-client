@@ -59,7 +59,7 @@ const CraftItems = () => {
             </div>
 
             <div className="flex justify-center" data-aos="fade-right" data-aos-duration="2000">
-                <div className="mb-20 flex max-w-4xl">
+                <div className="mb-20 flex max-w-5xl">
 
                     <Swiper
                         slidesPerView={4}

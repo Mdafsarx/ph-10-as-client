@@ -1,11 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "./Banner";
-// import Categories from "./Categories";
-import ContractUs from "./ContractUs";
 import CraftItems from "./CraftItems";
-import PopularProduct from "./PopularProduct";
-import OurClientSays from "./OurClientSays";
 import Contract from "./Contract";
+import Features from "./Features";
 
 
 const Home = () => {
@@ -14,12 +11,13 @@ const Home = () => {
             <Helmet>
                 <title>PaintStation | Home</title>
             </Helmet>
+
             <Banner />
+            <Features/>
             <CraftItems />
-            <PopularProduct />
-            <OurClientSays />
+            {/* <PopularProduct /> */}
+            {/* <OurClientSays /> */}
             <Contract />
-            <ContractUs />
         </div>
     );
 };

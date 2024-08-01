@@ -8,13 +8,13 @@ const Banner = () => {
     return (
         <div className="mb-16">
             <Carousel showArrows={false} infiniteLoop={true} autoPlay={true} interval={3000}>
-                <div className='h-[80.5vh]'>
+                <div className='md:h-[80.5vh]'>
                     <img src={img2} className='w-full' />
                 </div>
-                <div className='h-[80.5vh]'>
+                <div className='md:h-[80.5vh]'>
                     <img src={img3} className='w-full'/>
                 </div>
-                <div className='h-[80.5vh]'>
+                <div className='md:h-[80.5vh]'>
                     <img src={img1} className='w-full'/>
                 </div>
             </Carousel>
