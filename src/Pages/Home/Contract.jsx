@@ -1,5 +1,5 @@
 import { BiPhone } from "react-icons/bi";
-import { BsGithub, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
+import {  BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 import { FaFacebook } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
@@ -120,21 +120,18 @@ export default function Contract() {
 
                         {/* social site */}
                         <div className="flex items-center gap-3">
-                            <div>
+                            <a href="" target="_blank">
                                 <p className="bg-[#0065F733] p-2 rounded-full"><FaFacebook className="text-2xl text-[#0065F7]" /></p>
-                            </div>
-                            <div>
-                                <p className="bg-[#1F232833] p-2 rounded-full"><BsGithub className="text-2xl text-[#1F2328]" /></p>
-                            </div>
-                            <div>
+                            </a>
+                            <a href="" target="_blank">
                                 <p className="bg-[#0A66C233] p-2 rounded-full"><BsLinkedin className="text-2xl text-[#0A66C2]" /></p>
-                            </div>
-                            <div>
+                            </a>
+                            <a href="" target="_blank">
                                 <p className="bg-[#00000033] p-2 rounded-full"><BsTwitterX className="text-xl text-[#000000]" /></p>
-                            </div>
-                            <div>
+                            </a>
+                            <a href="" target="_blank">
                                 <p className="bg-[#FF000033] p-2 rounded-full"><BsYoutube className="text-xl text-[#FF0000]" /></p>
-                            </div>
+                            </a>
                         </div>
 
                     </div>

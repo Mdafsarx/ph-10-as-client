@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import CraftItems from "./CraftItems";
 import Contract from "./Contract";
 import Features from "./Features";
+import OurTeam from "./OurTeam";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner />
             <Features/>
             <CraftItems />
+            <OurTeam/>
             {/* <PopularProduct /> */}
             {/* <OurClientSays /> */}
             <Contract />

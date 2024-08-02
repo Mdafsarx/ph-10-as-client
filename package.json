@@ -16,6 +16,7 @@
     "axios": "^1.6.8",
     "firebase": "^10.11.1",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
     "react-awesome-button": "^7.0.5",
     "react-awesome-reveal": "^4.2.8",
     "react-dom": "^18.2.0",
@@ -29,7 +30,8 @@
     "react-toastify": "^10.0.5",
     "react-tooltip": "^5.26.4",
     "sweetalert2": "^11.12.3",
-    "swiper": "^11.1.1"
+    "swiper": "^11.1.1",
+    "tailwind-scrollbar": "^3.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

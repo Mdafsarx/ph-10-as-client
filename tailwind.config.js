@@ -5,10 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    
+    extend: {
+      height: {
+        'custom-scrollbar-thumb': '1px',
+      },
+    },
+
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('tailwind-scrollbar'),],
   daisyui: {
     themes: ["light", "dark"],
   },
