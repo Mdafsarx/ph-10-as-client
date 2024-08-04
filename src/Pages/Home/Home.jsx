@@ -4,6 +4,7 @@ import CraftItems from "./CraftItems";
 import Contract from "./Contract";
 import Features from "./Features";
 import OurTeam from "./OurTeam";
+import Painting from "./Painting";
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Features/>
             <CraftItems />
             <OurTeam/>
+            <Painting/>
             {/* <PopularProduct /> */}
             {/* <OurClientSays /> */}
             <Contract />

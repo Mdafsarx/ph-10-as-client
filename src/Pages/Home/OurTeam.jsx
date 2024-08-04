@@ -44,10 +44,10 @@ export default function OurTeam() {
                 {/* photo */}
                 <div className="md:w-[42%] grid grid-cols-2 gap-3 px-4 md:px-0">
 
-                    <figure><img src={img} className='rounded-2xl h-[229px] w-full opacity-60 hover:opacity-100' alt="" /></figure>
-                    <figure><img src={img2} className='rounded-2xl h-[229px] w-full opacity-60 hover:opacity-100' alt="" /></figure>
-                    <figure><img src={img3} className='rounded-2xl h-[229px] w-full opacity-60 hover:opacity-100' alt="" /></figure>
-                    <figure><img src={img4} className='rounded-2xl h-[229px] w-full opacity-60 hover:opacity-100' alt="" /></figure>
+                    <figure><img src={img} className='rounded-2xl h-[229px] w-full ' alt="" /></figure>
+                    <figure><img src={img2} className='rounded-2xl h-[229px] w-full ' alt="" /></figure>
+                    <figure><img src={img3} className='rounded-2xl h-[229px] w-full ' alt="" /></figure>
+                    <figure><img src={img4} className='rounded-2xl h-[229px] w-full ' alt="" /></figure>
 
                 </div>
             </div>

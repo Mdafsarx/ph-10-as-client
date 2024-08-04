@@ -25,7 +25,7 @@ export default function Contract() {
 
 
     return (
-        <div className="max-w-6xl mx-auto py-20 space-y-14">
+        <div className="max-w-6xl mx-auto py-20 space-y-8 md:space-y-14">
 
             {/* title for contract */}
             <div className="text-center">
