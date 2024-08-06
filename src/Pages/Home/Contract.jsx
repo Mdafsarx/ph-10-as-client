@@ -25,7 +25,7 @@ export default function Contract() {
 
 
     return (
-        <div className="max-w-6xl mx-auto py-20 space-y-8 md:space-y-14">
+        <div className="max-w-6xl mx-auto py-20 space-y-8 md:space-y-14 mb-16 md:mb-24">
 
             {/* title for contract */}
             <div className="text-center">
@@ -71,7 +71,7 @@ export default function Contract() {
                                     </div>
 
                                     <div className="col-span-full">
-                                        <button type="submit" className="btn btn-block bg-purple-500 text-white hover:bg-[#40F8FF] hover:text-black border-0">Let's Talk</button>
+                                        <button type="submit" className="btn btn-block bg-purple-500 text-white hover:bg-[#FF6AC2] hover:text-black border-0">Let's Talk</button>
                                     </div>
 
                                 </div>

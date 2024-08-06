@@ -7,13 +7,13 @@ const Details = () => {
   const { name, email, description, price, rating, customization, processing, subcategory, stock, image, Item } = loadedData || {};
 
   return (
-    <div className="md:py-20 max-w-7xl mx-auto">
+    <div className="md:py-20 max-w-7xl mx-auto mb-20">
       <Helmet>
         <title>PaintStation | Details</title>
       </Helmet>
       <div className="card md:card-side bg-base-100 shadow-xl rounded-none md:rounded-2xl">
         <figure className="md:w-1/2">
-          <img src={image} alt="Movie" className="h-full w-full" />
+          <img src={image} alt="Movie" className="h-96 w-full" />
         </figure>
         <div className="p-1 md:card-body">
           <h2 className="text-2xl font-extrabold">{Item}</h2>

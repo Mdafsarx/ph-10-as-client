@@ -58,14 +58,15 @@ const MyArtCraft = () => {
                 
                 <Empty text={'You have not added anything to the my Art&Craft'}/> :
 
-                        <div className="bg-gray-800 px-4">
+                        <div className="bg-gray-800 px-4 pb-24">
+
                             <div className="max-w-7xl mx-auto py-20 space-y-7">
                                 {/* title */}
                                 <div className="flex items-center justify-between">
-                                    <h1 className="text-3xl font-black text-[#40F8FF]" data-aos="fade-right" data-aos-duration="2000">My Art&craft ({Data.length} items)</h1>
+                                    <h1 className="text-3xl font-black text-[#FF6AC2]" data-aos="fade-right" data-aos-duration="2000">My Art&craft ({Data.length} items)</h1>
 
                                     <div className="dropdown dropdown-left dropdown-end" data-aos="fade-left"  data-aos-duration="2000">
-                                        <div tabIndex={0} role="button" className="btn m-1 font-bold bg-[#40F8FF] border-0 ">Sort</div>
+                                        <div tabIndex={0} role="button" className="btn m-1 font-bold bg-[#FF6AC2] text-white border-0 hover:bg-purple-500 hover:text-black">Sort</div>
                                         <ul tabIndex={0} className="dropdown-content z-[1] menu p-4 shadow bg-base-100 rounded-box w-auto">
                                             <li className="font-bold cursor-pointer" onClick={handlePrice}>Price</li>
                                             <li className="font-bold cursor-pointer" onClick={handleRating}>Rating</li>

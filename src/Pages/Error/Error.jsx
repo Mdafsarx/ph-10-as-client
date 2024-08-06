@@ -16,7 +16,7 @@ const Error = () => {
                         </h2>
                         <p className="text-2xl font-semibold md:text-3xl text-white">Sorry, we couldn't find this page.</p>
                         <p className="mt-4 mb-8 text-gray-400 dark:text-gray-600">But dont worry, you can find plenty of other things on our homepage.</p>
-                        <Link className="px-8 py-3 font-semibold rounded bg-purple-500" to={'/'}>Home</Link>
+                        <Link className="px-8 py-3 font-semibold rounded bg-purple-500 text-white hover:bg-[#FF6AC2] hover:text-black" to={'/'}>Home</Link>
                     </div>
                 </div>
             </section>

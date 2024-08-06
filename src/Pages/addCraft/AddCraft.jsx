@@ -42,7 +42,7 @@ const AddCraft = () => {
             <Helmet>
                 <title>PaintStation | Add-Craft</title>
             </Helmet>
-            <section className="p-20 bg-gray-800 text-gray-50">
+            <section className="p-20 bg-gray-800 text-gray-50 pb-36">
                 <form onSubmit={addCraft} className="container flex flex-col mx-auto space-y-12" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">
                     <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-900">
                         <div className="space-y-2 col-span-full lg:col-span-1">
@@ -109,7 +109,7 @@ const AddCraft = () => {
                             </div>
 
                             <div className=" col-span-full">
-                                <button className="btn btn-block bg-[#FF6AC2] border-0 text-white">
+                                <button className="btn btn-block bg-[#FF6AC2] border-0 text-white hover:bg-purple-500 hover:text-black">
                                     Submit
                                 </button>
                             </div>

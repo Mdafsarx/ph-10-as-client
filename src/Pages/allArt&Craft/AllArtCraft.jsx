@@ -30,9 +30,9 @@ const AllArtCraft = () => {
             {
                 loading ?
                     <div className="flex justify-center items-center h-[60vh]"><span className="loading loading-bars loading-lg size-20"></span></div>
-                    : allData.length === 0 ?
+                    : allData.length !== 0 ?
                         <Empty text={'No one has added anything here'} /> :
-                        <div>
+             <div className="mb-20">
                             <table className="table border-2 border-black">
                                 {/* head */}
                                 <thead className="bg-black text-white">
@@ -77,7 +77,7 @@ const AllArtCraft = () => {
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <button className="btn btn-sm bg-[#40F8FF]" onClick={() => {
+                                                    <button className="btn btn-sm bg-[#FF6AC2] text-white hover:bg-purple-500 hover:text-black" onClick={() => {
 
                                                         viewDetails(Data?._id)
                                                     }}>Details</button>
@@ -90,7 +90,7 @@ const AllArtCraft = () => {
                                 </tbody>
 
                             </table>
-                        </div>
+             </div>
             }
 
 

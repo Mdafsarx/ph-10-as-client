@@ -63,7 +63,7 @@ const Navbar = () => {
                                 <div>
                                     <a id="my-anchor-element">
                                         <div className="avatar placeholder">
-                                            <div className=" rounded-full w-7 mt-1 ring ring-[#40F8FF] ring-offset-base-100 ">
+                                            <div className=" rounded-full w-7 mt-1 ring ring-purple-500 ring-offset-base-100 ">
                                                 <img src={user?.photoURL} alt="" />
                                             </div>
                                         </div>

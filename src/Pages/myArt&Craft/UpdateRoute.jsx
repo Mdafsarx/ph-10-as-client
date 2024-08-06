@@ -54,8 +54,8 @@ const UpdateRoute = () => {
     return (
         <div >
             <div>
-                <section className="md:p-20 bg-gray-800 text-gray-50">
-                    <form className="container flex flex-col mx-auto space-y-12" onSubmit={handleUpdate} data-aos="zoom-in" data-aos-duration="3000" >
+                <section className="md:p-20 bg-gray-800 text-gray-50 ">
+                    <form className="container flex flex-col mx-auto space-y-12 pb-20" onSubmit={handleUpdate} data-aos="zoom-in" data-aos-duration="3000" >
                         <fieldset className="grid grid-cols-4 gap-6 p-6 md:rounded-2xl shadow-sm bg-gray-900 ">
 
                             <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
@@ -107,7 +107,7 @@ const UpdateRoute = () => {
                                 </div>
 
                                 <div className=" col-span-full">
-                                    <button className="btn btn-block bg-[#40F8FF] border-0 text-black">
+                                    <button className="btn btn-block bg-[#FF6AC2] border-0 text-white hover:bg-purple-500 hover:text-black">
                                         Update
                                     </button>
                                 </div>

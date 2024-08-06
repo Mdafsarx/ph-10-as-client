@@ -13,7 +13,7 @@ export default function OurTeam() {
                     <h1 className="text-[#FF6AC2] md:text-2xl">Our Team</h1>
                     <h1 className="text-xl md:text-4xl font-black ">Meet Our Expert Team</h1>
                 </div>
-                <button className="btn btn-outline border-[#FF6AC2] border-2 text-[#FF6AC2] rounded-full">View All Team</button>
+                <button className="btn btn-outline border-[#FF6AC2] border-2 text-[#FF6AC2] rounded-full hover:border-purple-500 hover:bg-white hover:text-purple-500">View All Team</button>
             </div>
 
             <div className="flex items-center flex-col md:flex-row gap-10">

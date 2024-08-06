@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className="relative mt-24">
+        <div className="relative">
 
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between border-4 border-white gap-4 md:gap-10 p-6 md:p-14 bg-gradient-to-r from-purple-500 to-[#FF6AC2] md:px-40 text-white absolute left-[9%] md:left-[15%] -mt-[80px] rounded-tr-3xl rounded-bl-3xl">
 
